@@ -69,7 +69,7 @@ acessar a aplicação na url determinada.
 
      Path do arquivo 
      
-     /home/ubuntu/vocacional_uerr/laradock/docker-compose.yml 
+     /home/diretoriodaaplicacao/laradock/docker-compose.yml 
 
 **1** - Em docker-compose.yml defina $CN e $EMAIL com seus dados:
 
@@ -115,13 +115,13 @@ acessar a aplicação na url determinada.
 
 **8** - Ajustar o arquivo .conf do nginx            
 
-        /home/ubuntu/vocacional_uerr/laradock/nginx/sites
+        /home/diretoriodaaplicacao/laradock/nginx/sites
 
         # For https
         listen 443 ssl default_server;
         listen [::]:443 ssl default_server ipv6only=on;
-        ssl_certificate /var/certs/testevocacional.uerr.edu.br-cert1.pem;
-        ssl_certificate_key /var/certs/testevocacional.uerr.edu.br-privkey1.pem;
+        ssl_certificate /var/certs/testes.com-cert1.pem;
+        ssl_certificate_key /var/certs/testes.com-privkey1.pem;
 
 **9** - Reiniciar o nginx
 
